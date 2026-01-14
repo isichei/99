@@ -23,11 +23,12 @@ local Range = require("99.geo").Range
 --- @return _99.StateProps
 local function create_99_state()
     return {
-        model = "opencode/claude-sonnet-4-5",
+        -- model = "opencode/claude-sonnet-4-5",
+        model = "opencode/qwen3-coder",
         md_files = {},
         prompts = require("99.prompt-settings"),
         ai_stdout_rows = 3,
-        languages = { "lua", "go", "java", "cpp" },
+        languages = { "lua", "go", "java", "cpp", "python" },
         display_errors = false,
         __active_requests = {},
         __view_log_idx = 1,
